@@ -1,0 +1,60 @@
+{
+  "name": "bb-plugin-hmm-themes",
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "bb": ">=0.42",
+    "bbPluginSdk": ">=0.4.47"
+  },
+  "bb": {
+    "name": "Hmm Themes",
+    "description": "Drastically different looks for bb, same layout. Pick one in Settings → Appearance.",
+    "branding": {
+      "icon": "Palette"
+    },
+    "server": "./server.ts",
+    "themes": [
+      {
+        "id": "brutalist",
+        "name": "Brutalist",
+        "description": "Paper, ink and one loud yellow. Hard borders, hard shadows, zero radius.",
+        "css": "./themes/brutalist.css"
+      },
+      {
+        "id": "apple",
+        "name": "Apple",
+        "description": "Calm system type, soft depth, capsule controls and iMessage blue.",
+        "css": "./themes/apple.css"
+      },
+      {
+        "id": "paper",
+        "name": "Paper",
+        "description": "Warm paper, serif reading text and one terracotta accent.",
+        "css": "./themes/paper.css"
+      },
+      {
+        "id": "retro-os",
+        "name": "Retro OS",
+        "description": "A 90s desktop: grey bevels, navy title bars and tooltip-yellow messages.",
+        "css": "./themes/retro-os.css"
+      },
+      {
+        "id": "terminal",
+        "name": "Terminal",
+        "description": "Green phosphor on black, monospace everywhere, scanlines and a shell prompt.",
+        "css": "./themes/terminal.css"
+      },
+      {
+        "id": "liquid-glass",
+        "name": "Liquid Glass",
+        "description": "Frosted glass panels over a soft gradient, capsule controls and glossy blue.",
+        "css": "./themes/liquid-glass.css"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@get-bb/plugin-sdk": "0.4.87",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}
