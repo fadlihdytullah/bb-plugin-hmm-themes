@@ -91,6 +91,9 @@ bb plugin install path:.
 - bb paints the send button through its wrapper and forces the button itself
   transparent with a layered `!important`, so the theme styles the wrapper
   (`div:has(> [data-promptbox-submit-action])`).
+- `apple` and `liquid-glass` draw the sidebar and content as rounded islands
+  with `clip-path`, so bb's layout and sidebar collapse stay untouched. The
+  desktop app's framed window (`[data-framed]`) gets its own island rules.
 - Press feedback is a short transform with an ease-out curve, hover effects
   are limited to fine pointers, and motion is removed under
   `prefers-reduced-motion`.

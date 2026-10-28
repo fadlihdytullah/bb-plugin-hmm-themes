@@ -154,6 +154,13 @@ section[aria-label="Sidebar activity"],
   border-color: transparent;
 }
 
+[data-framed] :is([data-testid="nav-rail-sidebar-body"], [data-sidebar="collapsible-body"]) {
+  background: transparent;
+  border-color: transparent;
+  border-radius: 0;
+  clip-path: none;
+}
+
 [data-framed] [data-app-content-shell] {
   clip-path: inset(0 round var(--apple-island-radius));
   padding-bottom: 0;
@@ -247,7 +254,7 @@ a[data-activity-thread-id][data-active="true"] {
 }
 
 [data-testid="sidebar-footer-row"] {
-  border-top: 1px solid var(--apple-hairline);
+  border-top: 0;
 }
 
 [data-sidebar="menu-button"],

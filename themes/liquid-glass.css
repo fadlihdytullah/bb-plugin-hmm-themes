@@ -485,6 +485,13 @@ section[aria-label="Sidebar activity"],
   border-color: transparent;
 }
 
+[data-framed] :is([data-testid="nav-rail-sidebar-body"], [data-sidebar="collapsible-body"]) {
+  background: transparent;
+  border-color: transparent;
+  border-radius: 0;
+  clip-path: none;
+}
+
 [data-framed] [data-app-content-shell] {
   clip-path: inset(0 round 22px);
   padding-bottom: 0;
