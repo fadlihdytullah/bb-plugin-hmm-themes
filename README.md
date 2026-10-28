@@ -51,6 +51,13 @@ After editing a theme file:
 bb plugin reload hmm-themes
 ```
 
+`paper`, `retro-os`, `terminal` and `liquid-glass` are generated. Edit
+`scripts/build-themes.py`, not their CSS files, then:
+
+```sh
+python3 scripts/build-themes.py && bb plugin reload hmm-themes
+```
+
 ## Deploy
 
 ```sh
